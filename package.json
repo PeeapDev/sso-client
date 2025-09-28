@@ -1,0 +1,27 @@
+{
+  "name": "@wangov/sso-client",
+  "version": "0.1.0",
+  "description": "WanGov SSO client SDK for browser apps",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": ["wangov", "sso", "oauth", "browser"],
+  "author": "WanGov Team",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.0"
+  }
+}
