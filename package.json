@@ -1,7 +1,8 @@
 {
   "name": "@wangov/sso-client",
   "version": "0.1.0",
-  "description": "WanGov SSO client SDK for browser apps",
+  "private": false,
+  "description": "WanGov SSO client SDK for browser apps (standalone project)",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
